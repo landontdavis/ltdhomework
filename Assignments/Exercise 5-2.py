@@ -1,3 +1,5 @@
+# Notes
+'''
 #data set
 data=[9, 41, 12, 3, 74, 15]
 
@@ -15,6 +17,7 @@ for num in data:
         lsf=num
     print(lsf,num)
 print('after largest number',lsf)
+'''
 
 #working on the exercise
 largest=None
