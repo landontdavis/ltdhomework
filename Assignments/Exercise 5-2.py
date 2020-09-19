@@ -35,3 +35,26 @@ while True:
     print(fnum)
 print('Maximum is',largest)
 print('Minimum is',smallest)
+
+
+# Christian's version
+
+largest=None
+smallest=None
+while True:
+    number=input('Enter a number: ')
+    if fnum=='done':
+        break
+    elif fnum.isnumeric() == False: # if isnumeric it results in True, if not it results in False
+        continue # Continues to next iteration of loop -- prompting for new input
+    for x in fnum:
+        if largest is None or x>largest:
+            largest=x
+    for y in fnum:
+        if smallest in None or y<smallest:
+            smallest=y
+    print(fnum)
+print('Maximum is',largest)
+print('Minimum is',smallest)
+
+
