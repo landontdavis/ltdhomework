@@ -11,9 +11,7 @@ print('after data set')
 lsf=None
 print('before largest number', lsf)
 for num in data:
-    if lsf is None:
-        lsf=num
-    elif num>lsf:
+    if lsf is None or num>lsf:
         lsf=num
     print(lsf,num)
 print('after largest number',lsf)
@@ -23,9 +21,14 @@ largest=None
 smallest=None
 while True:
     number=input('Enter a number: ')
-    fnum=float(number)
     if fnum=='done':break
-    
+    elif fnum 
+    for x in fnum:
+        if largest is None or x>largest:
+            largest=x
+    for y in fnum:
+        if smallest in None or y<smallest:
+            smallest=y
     print(fnum)
 print('Maximum is',largest)
 print('Minimum is',smallest)
