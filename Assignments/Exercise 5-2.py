@@ -54,23 +54,22 @@ print('Minimum is',smallest)
 
 # Christian's version
 
+number = 0
 largest=None
 smallest=None
 while True:
     number=input('Enter a number: ')
     if number=='done':
         break
-    elif number.isnumeric()==False:
-        print("Invalid input")
+    try :
+        number_ = int(number)
+    except :
+        print('Invalid input')
         continue
-    elif number == None:
-        continue
-    elif number.isnumeric():
-        number = int(number)  
-        if largest == None or number>largest:
-            largest=number
-        if smallest == None or number<smallest:
-            smallest=number
+    if largest == None or number_>largest:
+        largest=number_
+    if smallest == None or number_<smallest:
+        smallest=number_
 print('Maximum is',largest)
 print('Minimum is',smallest)
 
