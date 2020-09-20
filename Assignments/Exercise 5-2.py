@@ -51,10 +51,10 @@ while True:
         print('Invalid input')
         continue # Continues to next iteration of loop -- prompting for new input
     elif number.isnumeric():
-        if largest is None or x>largest:
-            largest=x
-        if smallest is None or y<smallest:
-            smallest=y
+        if largest is None or number>largest:
+            largest=number
+        if smallest is None or number<smallest:
+            smallest=number
 print('Maximum is',largest)
 print('Minimum is',smallest)
 
