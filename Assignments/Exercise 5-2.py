@@ -24,15 +24,17 @@ largest=None
 smallest=None
 while True:
     number=input('Enter a number: ')
-    if fnum=='done':break
-    elif fnum 
-    for x in fnum:
-        if largest is None or x>largest:
-            largest=x
-    for y in fnum:
-        if smallest in None or y<smallest:
-            smallest=y
-    print(fnum)
+    if number=='done':
+        break
+    elif number.isnumeric()==False:
+        print("Invalid input")
+        continue
+    elif number.isnumeric():    
+        if largest is None or number>largest:
+            largest=number
+        if smallest in None or number<smallest:
+            smallest=number
+    print(number)
 print('Maximum is',largest)
 print('Minimum is',smallest)
 
