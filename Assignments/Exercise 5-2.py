@@ -47,13 +47,16 @@ while True:
     number=input('Enter a number: ')
     if number=='done':
         break
-    elif number.isnumeric() == False: # if isnumeric it results in True, if not it results in False
-        print('Invalid input')
-        continue # Continues to next iteration of loop -- prompting for new input
+    elif number.isnumeric()==False:
+        print("Invalid input")
+        continue
+    elif number == None:
+        continue
     elif number.isnumeric():
-        if largest is None or number>largest:
+        number = int(number)  
+        if largest == None or number>largest:
             largest=number
-        if smallest is None or number<smallest:
+        if smallest == None or number<smallest:
             smallest=number
 print('Maximum is',largest)
 print('Minimum is',smallest)
