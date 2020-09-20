@@ -43,17 +43,15 @@ largest=None
 smallest=None
 while True:
     number=input('Enter a number: ')
-    if fnum=='done':
+    if number=='done':
         break
-    elif fnum.isnumeric() == False: # if isnumeric it results in True, if not it results in False
+    elif number.isnumeric() == False: # if isnumeric it results in True, if not it results in False
         continue # Continues to next iteration of loop -- prompting for new input
-    for x in fnum:
+    elif number.isnumeric():
         if largest is None or x>largest:
             largest=x
-    for y in fnum:
-        if smallest in None or y<smallest:
+        if smallest is None or y<smallest:
             smallest=y
-    print(fnum)
 print('Maximum is',largest)
 print('Minimum is',smallest)
 
