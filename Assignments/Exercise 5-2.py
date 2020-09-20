@@ -54,7 +54,7 @@ print('Minimum is',smallest)
 
 # Christian's version
 
-number = 0
+number = ''
 largest=None
 smallest=None
 while True:
