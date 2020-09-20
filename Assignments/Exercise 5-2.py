@@ -30,11 +30,11 @@ while True:
         print("Invalid input")
         continue
     elif number.isnumeric():    
+        number=int(number)
         if largest is None or number>largest:
             largest=number
-        if smallest in None or number<smallest:
+        if smallest is None or number<smallest:
             smallest=number
-    print(number)
 print('Maximum is',largest)
 print('Minimum is',smallest)
 
