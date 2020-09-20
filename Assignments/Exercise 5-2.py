@@ -46,6 +46,7 @@ while True:
     if number=='done':
         break
     elif number.isnumeric() == False: # if isnumeric it results in True, if not it results in False
+        print('Invalid input')
         continue # Continues to next iteration of loop -- prompting for new input
     elif number.isnumeric():
         if largest is None or x>largest:
