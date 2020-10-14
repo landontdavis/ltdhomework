@@ -7,7 +7,12 @@ except:
 
 fh=open(fname)
 count=0
+floattotal = 0
 for line in fh:
+    count += 1
     line=line.rstrip()
+    floattotal += float(line[:19])
     if line.startswith("X-DSPAM-Confidence:"):
         print(line)
+if count > 0:
+    final = floattotal/count
