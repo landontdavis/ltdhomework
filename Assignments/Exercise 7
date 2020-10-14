@@ -8,6 +8,6 @@ except:
 fh=open(fname)
 count=0
 for line in fh:
-    if not line.startwith("X-DSPAM-Confidence:") : continue
-        count=count+1
-Fcount=float(count)
+    line=line.rstrip()
+    if line.startswith("X-DSPAM-Confidence:"):
+        print(line)
