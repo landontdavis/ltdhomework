@@ -11,8 +11,7 @@ floattotal = 0
 for line in fh:
     count += 1
     line=line.rstrip()
-    floattotal += float(line[:19])
     if line.startswith("X-DSPAM-Confidence:"):
-        print(line)
+        floattotal += float(line[:19])
 if count > 0:
     final = floattotal/count
