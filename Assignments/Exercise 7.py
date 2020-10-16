@@ -15,5 +15,4 @@ for line in fh:
         count += 1
 if count > 0:
     final = floattotal/count
-
-print(final)
+    print(final)
