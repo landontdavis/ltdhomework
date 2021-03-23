@@ -28,11 +28,11 @@ except:
 file=open(text)
 a=[]
 for a in file:
-    x=file.split()
+    x=a.split()
     if x[a][0].isupper():
         list.append(x[a])
     x.pop(a)
 
 newlist=list+x
 
-print(newlist)    
+print(newlist)   
